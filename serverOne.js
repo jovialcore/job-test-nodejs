@@ -20,8 +20,8 @@ subscriber.on("message", (channel, message) => {
   console.log("Received data :" + message)
 })
 subscriber.subscribe("user-notify")
-app.get("/", (req, res) => {
-  res.send("Subscriber One")
+app.get("/events", (req, res) => {
+  res.send("Subscriber One published..check your ")
 })
 app.listen(3006, () => {
   console.log("server is listening to port 3006")

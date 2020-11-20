@@ -26,7 +26,7 @@ const app = express()
 subscriber.on("message", (channel, message) => {
   console.log("Received data :" + message)
 })
-app.get("/", (req, res) => {
+app.get("/subscribe", (req, res) => {
   res.send("subscriber two")
 })
 subscriber.subscribe("user-notify")
