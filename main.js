@@ -5,11 +5,11 @@ const publisher = redis.createClient()
 const app = express()
 app.get("/", (req, res) => {
   const user = {
-    id: "123456",
-    name: "Davis",
+    id: "message",
+    name: "hello",
   }
   publisher.publish("user-notify", JSON.stringify(user))
-  res.send("Publishing an Event using Redis")
+  res.send("{ message : hello}")
 })
 app.listen(3005, () => {
   console.log(`server is listening on PORT 3005`)
