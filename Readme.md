@@ -2,9 +2,9 @@
 
 #STEPS
 
-#Have nodejs and configure redis-cli for your environment
+#Make sure you have nodejs and already configured redis-cli for your environment
 
-#install express, redis modules from your npm terminal
+#install express redis and modules from your npm terminal
 -
 -Open another npm terminal and run "node events" first 
 -Run node main

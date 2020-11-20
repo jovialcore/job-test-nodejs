@@ -24,5 +24,5 @@ app.get("/events", (req, res) => {
   res.send("Subscriber One published..check your ")
 })
 app.listen(8000, () => {
-  console.log("server is listening to port 3006")
+  console.log("Your server is on port 8000")
 })

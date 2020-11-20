@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("{ message : hello}")
 })
 app.listen(8000, () => {
-  console.log(`server is listening on PORT 3005`)
+  console.log(`Your server is on PORT 8000`)
 })
 
 
