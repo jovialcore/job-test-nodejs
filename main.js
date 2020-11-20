@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   publisher.publish("user-notify", JSON.stringify(user))
   res.send("{ message : hello}")
 })
-app.listen(3005, () => {
+app.listen(8000, () => {
   console.log(`server is listening on PORT 3005`)
 })
 

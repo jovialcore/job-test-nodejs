@@ -23,6 +23,6 @@ subscriber.subscribe("user-notify")
 app.get("/events", (req, res) => {
   res.send("Subscriber One published..check your ")
 })
-app.listen(3006, () => {
+app.listen(8000, () => {
   console.log("server is listening to port 3006")
 })
